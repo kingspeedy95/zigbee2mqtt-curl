@@ -6,7 +6,7 @@ on:
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    
+
 env:
   TARGET_PLATFORMS: linux/amd64,linux/arm64
   REGISTRY: ghcr.io
@@ -64,4 +64,3 @@ jobs:
         with:
           ref: latest
           description: Latest Version of the Image. Daily build.
-          force-branch: true
