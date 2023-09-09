@@ -12,11 +12,11 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
+permissions: write-all
+
 jobs:
   build_and_release:
     runs-on: ubuntu-20.04
-    permissions:
-      packages: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
