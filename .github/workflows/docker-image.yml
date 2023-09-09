@@ -61,12 +61,3 @@ jobs:
           platforms: ${{ env.TARGET_PLATFORMS }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-      
-      - name: "Release"
-        uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          files: |
-              Dockerfile
-              README.md
