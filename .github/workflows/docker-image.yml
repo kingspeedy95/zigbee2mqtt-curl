@@ -64,3 +64,4 @@ jobs:
         with:
           ref: latest
           description: Latest Version of the Image. Daily build.
+          force-branch: true
